@@ -136,12 +136,13 @@ body {
 }
 h1 {
   font-size: 40px;
-  color: Coral;
+  color: coral;
   font-family: 'Permanent Marker', cursive;
 }
 h2 {
   font-family: 'Permanent Marker', cursive;
   font-size: 25px;
+  padding-top: 1%;
 }
 h3 {
   font-family: 'Permanent Marker', cursive;
@@ -152,7 +153,11 @@ h4 {
 li {
   list-style-type: disc;
   font-family: 'Questrial', sans-serif;
-  margin-left: 5rem;
+  margin-left: 2rem;
+}
+p {
+  margin: 2%;
+  font-family: 'Questrial', sans-serif;
 }
 nav {
   display: flex;
@@ -162,24 +167,71 @@ nav {
 nav a {
   margin: 1rem;
   text-decoration: none;
-  color: Coral;
+  color: coral;
   font-size: 20px;
   font-family: 'Permanent Marker', cursive;
 }
 .introduction {
   background-color: lightgrey;
-  padding: 20%;
+  margin: 5%;
 }
 .introduction .top {
   border-bottom: 1px solid black;
-  padding: 5%;
+  Display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+.introduction .bottom {
+  margin: 5%;
+}
+.introduction .img {
+  width: 40%;
 }
 .skills {
   margin: 5%;
+  background-color: coral;
+  Display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.history {
+.skills .skilled {
+  padding: 5%;
+}
+.skills img {
+  width: 40%;
+  height: 40%;
+}
+.employment {
   margin: 5%;
+  Display: flex;
+  background-color: lightgrey;
+  padding: 5%;
+  justify-content: space-between;
+}
+.employment img {
+  width: 30%;
+  height: 30%;
 }
 .contact {
   margin: 5%;
+  background-color: coral;
+  padding-bottom: 5%;
+}
+.contact h2 {
+  margin: 5%;
+}
+.contact .links {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2rem;
+}
+.contact a {
+  text-decoration: none;
+  color: lightgrey;
+}
+.icons {
+  margin-left: 1.5%;
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -59,7 +59,8 @@ html, body {
 
 // ******My CSS begins here******
 // general CSS
-@main-color:Coral;
+
+@main-color:coral;
 @accent-color:lightgrey;
 @main-font:'Permanent Marker', cursive;
 @accent-font:'Questrial', sans-serif;
@@ -71,12 +72,10 @@ h1 {
 h2 {
 	font-family: @main-font;
 	font-size: 25px;
-	padding: 3%;
+	padding-top: 1%;
 }
 h3 {
 	font-family: @main-font;
-	padding:3rem;
-	
 }
 
 h4 {
@@ -86,12 +85,13 @@ h4 {
 li {
 	list-style-type: disc;
 	font-family: @accent-font;
-	margin-left: 5rem;
+	margin-left: 2rem;
 }
 p {
 	margin:2%;
 	font-family: @accent-font;
 }
+
 // Parent Child CSS
 
 nav {
@@ -106,29 +106,80 @@ nav {
 		font-size: 20px;
 		font-family: @main-font;
 	}
-	
 }
 
 .introduction {
 	background-color:@accent-color;
-	padding:15%;
-	
+	margin:5%;
 
 	.top {
 		border-bottom: 1px solid black;
-		padding:5%;	
-		Display:flex;
+		Display:flex;	
+		justify-content: space-between;
+		margin: 5%;;
+}
+.bottom{
+	margin:5%;
+}
+.img{
+	width: 40%;
 }
 }
-
 .skills {
 	margin:5%;
+	background-color:@main-color;
+	Display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	.skilled {
+	padding:5%;
+	}
+	img {
+		width:40%;
+		height:40%;
+	}
+	
 }
 
-.history {
-	margin:5%;
-}
+
+.employment {
+		margin:5%;
+		Display:flex;
+		background-color:@accent-color;
+		padding:5%;
+		justify-content: space-between;
+		img{
+			width:30%;
+			height:30%;
+		}
+	}
 
 .contact {
 	margin:5%;
+	background-color:@main-color;
+	padding-bottom:5%;
+
+	h2 {
+		margin:5%;
+	}
+	
+	.links {
+	
+	display:flex;
+	justify-content: space-evenly;
+	font-family: @accent-font;
+	font-size: 2rem;
+	
+	}
+a {
+	text-decoration: none;
+	color:@accent-color;
+}
+}
+.icons {
+	margin-left:1.5%;
+	display: flex;
+	justify-content: space-evenly;
+	
 }
