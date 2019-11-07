@@ -57,3 +57,72 @@ html, body {
     height: 100%;
 }
 
+// ******My CSS begins here******
+// general CSS
+@main-color:Coral;
+@accent-color:lightgrey;
+@main-font:'Permanent Marker', cursive;
+@accent-font:'Questrial', sans-serif;
+h1 {
+	font-size:40px;
+	color:@main-color;
+	font-family:@main-font;
+}
+h2 {
+	font-family: @main-font;
+	font-size: 25px;
+}
+h3 {
+	font-family: @main-font;
+	
+}
+
+h4 {
+	font-family: @accent-font;
+}
+
+li {
+	list-style-type: disc;
+	font-family: @accent-font;
+	margin-left: 5rem;
+}
+// Parent Child CSS
+
+nav {
+	display:flex;
+	justify-content: flex-end;
+	margin:5%;
+	
+	a {
+		margin:1rem;
+		text-decoration: none;
+		color:@main-color;
+		font-size: 20px;
+		font-family: @main-font;
+	}
+	
+}
+
+.introduction {
+	background-color:@accent-color;
+	padding:20%;
+	
+
+	.top {
+		border-bottom: 1px solid black;
+		padding:5%;
+	}
+	
+}
+
+.skills {
+	margin:5%;
+}
+
+.history {
+	margin:5%;
+}
+
+.contact {
+	margin:5%;
+}
