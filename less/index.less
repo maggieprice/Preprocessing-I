@@ -64,8 +64,15 @@ html, body {
 @accent-color:lightgrey;
 @main-font:'Permanent Marker', cursive;
 @accent-font:'Questrial', sans-serif;
+.main-margin {
+	margin:5%;
+}
+.font-sizing {
+	font-size: 40px;
+}
 h1 {
-	font-size:40px;
+	.font-sizing();
+	.main-margin();
 	color:@main-color;
 	font-family:@main-font;
 }
@@ -142,13 +149,15 @@ nav {
 	
 }
 
-
 .employment {
 		margin:5%;
 		Display:flex;
 		background-color:@accent-color;
 		padding:5%;
 		justify-content: space-between;
+		h2 {
+			padding-bottom: 5%;
+		}
 		img{
 			width:30%;
 			height:30%;
@@ -182,4 +191,23 @@ a {
 	display: flex;
 	justify-content: space-evenly;
 	
+}
+
+// Responsive CSS
+@media(max-width: 500px){
+	nav {
+		display:flex;
+	}
+
+	img {
+		display:none;
+	}
+
+	.links {
+		display:flex;
+		a { 
+		font-family: @accent-font;
+		font-size: 15px;
+		}
+	}
 }

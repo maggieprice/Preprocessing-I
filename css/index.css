@@ -134,8 +134,15 @@ html,
 body {
   height: 100%;
 }
+.main-margin {
+  margin: 5%;
+}
+.font-sizing {
+  font-size: 40px;
+}
 h1 {
   font-size: 40px;
+  margin: 5%;
   color: coral;
   font-family: 'Permanent Marker', cursive;
 }
@@ -208,6 +215,9 @@ nav a {
   padding: 5%;
   justify-content: space-between;
 }
+.employment h2 {
+  padding-bottom: 5%;
+}
 .employment img {
   width: 30%;
   height: 30%;
@@ -234,4 +244,19 @@ nav a {
   margin-left: 1.5%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+  }
+  img {
+    display: none;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+  }
 }
